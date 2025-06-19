@@ -1,0 +1,197 @@
+/* Reset básico // Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  background-color: #3d0d0d;
+  color: #f4e7d3;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #260909;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 150px;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8em;
+  color: #f4e7d3;
+  margin-top: 10px;
+}
+
+/* Navegação */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #f4e7d3;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b07040;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.banner h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  color: #f4e7d3;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Cartões de produto */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background-color: #f4e7d3;
+  border: 2px solid #b07040;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: #3d0d0d;
+  text-align: center;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.produto h2 {
+  color: #4a0b0b;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  margin-bottom: 10px;
+}
+
+/* Botão padrão */
+.botao {
+  background-color: #b07040;
+  color: #f4e7d3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #8c512d;
+  cursor: pointer;
+}
+
+/* WhatsApp flutuante */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp img {
+  width: 60px;
+  transition: transform 0.3s;
+}
+
+.whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #260909;
+  margin-top: 50px;
+  text-align: center;
+  color: #f4e7d3;
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+footer a {
+  color: #f4e7d3;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #b07040;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .produto {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header img {
+    max-width: 120px;
+  }
+
+  .banner h2 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+}
